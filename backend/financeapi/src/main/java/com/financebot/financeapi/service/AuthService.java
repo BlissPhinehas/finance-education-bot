@@ -1,11 +1,5 @@
 package com.financebot.financeapi.service;
 
-import com.financebot.financeapi.dto.AuthResponse;
-import com.financebot.financeapi.dto.LoginRequest;
-import com.financebot.financeapi.dto.RegisterRequest;
-import com.financebot.financeapi.model.User;
-import com.financebot.financeapi.repository.UserRepository;
-import com.financebot.financeapi.security.JwtUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -13,6 +7,13 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+
+import com.financebot.financeapi.dto.AuthResponse;
+import com.financebot.financeapi.dto.LoginRequest;
+import com.financebot.financeapi.dto.RegisterRequest;
+import com.financebot.financeapi.model.User;
+import com.financebot.financeapi.repository.UserRepository;
+import com.financebot.financeapi.security.JwtUtils;
 
 @Service
 public class AuthService {
