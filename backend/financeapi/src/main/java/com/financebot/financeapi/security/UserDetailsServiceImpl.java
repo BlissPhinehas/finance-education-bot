@@ -1,4 +1,4 @@
-package com.financebot.finance_api.security;
+package com.financebot.financeapi.security;
 
 import java.util.ArrayList;
 
